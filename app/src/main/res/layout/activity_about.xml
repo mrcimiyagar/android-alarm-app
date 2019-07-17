@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kasper_external_apps.android.alarmer.front.activities.AboutActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_about_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="14dp"
+        android:background="@drawable/background_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="72dp"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:src="@drawable/android"
+                            android:scaleType="fitXY"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:text="توسعه ی اپ اندروید"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:text="کیهان محمدی"
+                            android:layout_marginTop="28dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/activity_about_keyhan_email_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="آدرس ایمیل :\n mohammadi_keyhan@outlook.com"
+                        android:lineSpacingExtra="8dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#fff"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:src="@drawable/image"
+                            android:scaleType="fitXY"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:text="طراحی آیکن اپ"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:text="آریان زودی"
+                            android:layout_marginTop="28dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/activity_about_aryan_email_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="آدرس ایمیل :\n Ariyanz1997@gmail.com"
+                        android:lineSpacingExtra="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="آی دی اینستاگرام :\n @9desi9n"
+                        android:lineSpacingExtra="8dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/time_icon_mini"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/activity_about_content_container"
+        android:layout_marginBottom="-72dp"
+        android:elevation="6dp"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

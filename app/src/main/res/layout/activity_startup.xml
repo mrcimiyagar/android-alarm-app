@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHeader2"
+    tools:context="kasper_external_apps.android.alarmer.front.activities.StartupActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="176dp"
+            android:layout_height="176dp"
+            android:gravity="center"
+            android:background="@drawable/time_icon_mini"
+            android:elevation="4dp"
+            tools:targetApi="lollipop" />
+
+        <kasper_external_apps.android.alarmer.front.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:id="@+id/widget_alarm_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="25 مهر 1396"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="6dp"
+        tools:targetApi="lollipop"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/widget_alarm_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="روزانه"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageButton
+            android:id="@+id/widget_alarm_right_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:tint="#FFF"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageButton
+            android:id="@+id/widget_alarm_left_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/left"
+            android:tint="#FFF"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/widget_alarm_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

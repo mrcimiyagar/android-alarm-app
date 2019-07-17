@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="kasper_external_apps.android.alarmer.front.activities.AlarmMainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_alarm_main_not_found_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="280dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tasks"
+            android:tint="@color/colorHint"
+            android:layout_marginBottom="32dp"/>
+
+        <kasper_external_apps.android.alarmer.front.components.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="27sp"
+            android:text="یادآوری وجود ندارد"/>
+
+    </LinearLayout>
+
+    <com.github.florent37.materialviewpager.MaterialViewPager
+        android:id="@+id/activity_main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewpager_logoMarginTop="100dp"
+        app:viewpager_headerHeight="224dp"
+        app:viewpager_headerAlpha="1.0"
+        app:viewpager_logo="@layout/header_logo"
+        app:viewpager_enableToolbarElevation="true"
+        app:viewpager_parallaxHeaderFactor="1.5"
+        app:viewpager_displayToolbarWhenSwipe="true"
+        app:viewpager_transparentToolbar="false"
+        app:viewpager_animatedHeaderImage="true"
+        app:viewpager_disableToolbar="false"
+        app:viewpager_hideLogoWithFade="false"
+        app:viewpager_hideToolbarAndTitle="false"
+        app:viewpager_pagerTitleStrip="@layout/my_tabs" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_alarm_main_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@drawable/add"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onAddBtnClicked"
+        app:backgroundTint="@color/colorAccent"
+        android:tint="#FFF"/>
+
+</android.support.design.widget.CoordinatorLayout>

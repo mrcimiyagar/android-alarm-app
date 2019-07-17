@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorDivider"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+
+        <kasper_external_apps.android.alarmer.front.components.CustomTextView
+            android:id="@+id/adapter_alarm_item_middle_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="غذا دادن به بچه"
+            android:textSize="18sp"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginRight="40dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/adapter_alarm_item_middle_done_image_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/done"/>
+
+        <kasper_external_apps.android.alarmer.front.components.CustomTextView
+            android:id="@+id/adapter_alarm_item_middle_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2:55 PM"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <kasper_external_apps.android.alarmer.front.components.CustomTextView
+            android:id="@+id/adapter_alarm_item_middle_time_modified_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ایجاد شده در 13:29 - 1396/06/30"
+            android:paddingLeft="8dp"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

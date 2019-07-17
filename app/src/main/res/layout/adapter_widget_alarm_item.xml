@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#FFF"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:elevation="2dp"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/adapter_alarm_item_middle_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="غذا دادن به بچه"
+            android:textSize="18sp"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/adapter_alarm_item_middle_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2:55 PM"
+            android:gravity="center"
+            android:textColor="@color/colorHint"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/adapter_alarm_item_middle_time_modified_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ایجاد شده در 13:29 - 1396/06/30"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/colorHint"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

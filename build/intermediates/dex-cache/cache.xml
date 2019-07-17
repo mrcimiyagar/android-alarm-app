@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.android\build-cache\fd38fecd9fa21ddbd9cec43debfc5252a3c1d6f4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\classes_221d9059a32631034cdc40cce6daf04ca586f0da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.android\build-cache\b2c5fc5aa9b608dfbae1a1a03a36ed03e49600f1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="611c7708cd3df0d7ae99105d4df5af8eb25c4b32">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\classes_c4d8ab2453360fd7abcfb19bc13d85319a60e38d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.android\build-cache\f66f4eafe42a42d0c43ddb84a8c7cf9aaa80b164\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63e7f521cc66c17dd9a22fbf75925a7947bfef7a">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\classes_6a109b06731ec7cc2fa4d1ea0db2e99049a67324.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.0.0\d88059003509074dd59fa226c822724bcf5ec0ca\disklrucache-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d88059003509074dd59fa226c822724bcf5ec0ca">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\disklrucache-4.0.0_e24d444ddb4980b696feb7a62d778ded90a02131.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.gradle\caches\modules-2\files-2.1\com.flaviofaria\kenburnsview\1.0.7\ce4e8bba9e026dd29f8110b2f6bb1fc4ecbdd9b1\kenburnsview-1.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ce4e8bba9e026dd29f8110b2f6bb1fc4ecbdd9b1">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\kenburnsview-1.0.7_1c943ac258f38bded3bb34317323bae3cc26a34e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\4.0.0\dff931af436f0a2815d0109ab2258bbce2d6275d\glide-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dff931af436f0a2815d0109ab2258bbce2d6275d">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\glide-4.0.0_fa80b91c67bc803107efe8560252bb1856b8b008.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.android\build-cache\7ed1a470529fad2c2cc4167ff6253a19be0bdf1c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02195619bd1b6c51330426768ffeed403a57c34d">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\classes_74c8c846094f32729598c7f584d7a4f8eef5175e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\gifdecoder\4.0.0\47c487cc4e64e6ab127a517669ca9a7b49f8c61d\gifdecoder-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47c487cc4e64e6ab127a517669ca9a7b49f8c61d">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\gifdecoder-4.0.0_38dc5ded1a7226c6af94fdce49475e3ff342fd34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\keyhan1376\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.0.0\f80192e6fd828d41c7da6f3552b0bef5d89cb26e\annotations-4.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f80192e6fd828d41c7da6f3552b0bef5d89cb26e">
+        <dex dex="F:\Desktop\AlarmerAndroidProject\app\build\intermediates\pre-dexed\debug\annotations-4.0.0_1f4aee072c2bc2de01c4d283c1579a049b672abf.jar" />
+    </item>
+
+</items>

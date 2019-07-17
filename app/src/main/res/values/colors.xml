@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#335d63</color>
+    <color name="colorPrimaryDark">#223F43</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="colorHint">#FF888888</color>
+    <color name="colorTabInActive">#DDD</color>
+    <color name="colorTabActive">#FFF</color>
+    <color name="colorDivider">#BBB</color>
+    <color name="colorIntro1">#455A64</color>
+    <color name="colorIntro2">#448AFF</color>
+    <color name="colorIntro3">#009688</color>
+    <color name="colorIntro4">#FFC107</color>
+    <color name="colorIntro5">#FF4081</color>
+    <color name="colorIntro6">#FF5722</color>
+
+    <color name="colorHeader1">#0082ce</color>
+    <color name="colorHeader2">#223F43</color>
+    <color name="colorHeader3">#EB1249</color>
+
+    <color name="colorHeaderLogo1">#fff</color>
+    <color name="colorHeaderLogo2">#fff</color>
+    <color name="colorHeaderLogo3">#fff</color>
+</resources>

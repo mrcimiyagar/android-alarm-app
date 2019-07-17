@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kasper_external_apps.android.alarmer.front.activities.AlarmAddActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_alarm_add_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_container"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:elevation="4dp"
+        tools:targetApi="lollipop"
+        android:paddingTop="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56.25dp"
+            android:elevation="6dp"
+            tools:targetApi="lollipop">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/title"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true" />
+
+            <kasper_external_apps.android.alarmer.front.components.CustomEditText
+                android:id="@+id/activity_alarm_add_alarm_title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="56dp"
+                android:textColorHint="@color/colorHint"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:textColor="#000"
+                android:lines="1"
+                android:hint="عنوان"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHint"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56.25dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/details"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true" />
+
+            <kasper_external_apps.android.alarmer.front.components.CustomEditText
+                android:id="@+id/activity_alarm_add_alarm_details_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="56dp"
+                android:textColor="#000"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/colorHint"
+                android:lines="1"
+                android:inputType="text"
+                android:hint="توضیحات"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHint"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56.25dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onTimeBtnClicked">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/time"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true" />
+
+            <kasper_external_apps.android.alarmer.front.components.CustomTextView
+                android:id="@+id/activity_alarm_add_time_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="56dp"
+                android:textColorHint="@color/colorHint"
+                android:hint="اکنون"
+                android:textColor="#000"
+                android:background="@android:color/transparent"
+                android:gravity="right|center_vertical"
+                android:textSize="18sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHint"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56.25dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onDateBtnClicked">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/date"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true" />
+
+            <kasper_external_apps.android.alarmer.front.components.CustomTextView
+                android:id="@+id/activity_alarm_add_date_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="56dp"
+                android:textColorHint="@color/colorHint"
+                android:hint="امروز"
+                android:textColor="#000"
+                android:background="@android:color/transparent"
+                android:gravity="right|center_vertical"
+                android:textSize="18sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHint"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56.25dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onSoundBtnClicked">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/sound"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true" />
+
+            <kasper_external_apps.android.alarmer.front.components.CustomTextView
+                android:id="@+id/activity_alarm_add_sound_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="56dp"
+                android:textColorHint="@color/colorHint"
+                android:hint="صدای پیش فرض"
+                android:textColor="#000"
+                android:background="@android:color/transparent"
+                android:gravity="right|center_vertical"
+                android:textSize="18sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHint"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/background_circle"
+                android:backgroundTint="#EEE"
+                android:src="@drawable/build"
+                android:tint="@color/colorHint"
+                android:layout_alignParentRight="true"
+                android:onClick="onActionBtnClicked"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_below="@id/activity_alarm_add_info_container"
+        android:src="@drawable/save"
+        android:tint="#fff"
+        android:layout_marginTop="-60dp"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSaveBtnClicked"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_alarm_add_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_below="@id/activity_alarm_add_info_container"
+        android:src="@drawable/delete"
+        android:tint="#fff"
+        android:layout_marginTop="-53dp"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:onClick="onDeleteBtnClicked"
+        android:layout_marginRight="32dp"/>
+
+    <ImageButton
+        android:id="@+id/activity_alarm_add_star_button"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_above="@id/activity_alarm_add_info_container"
+        android:src="@drawable/grade"
+        android:tint="@color/colorHint"
+        android:layout_marginBottom="-53dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/background_circle"
+        android:backgroundTint="#EEE"
+        android:elevation="6dp"
+        android:onClick="onStarBtnClicked"
+        tools:targetApi="lollipop" />
+
+    <ImageButton
+        android:id="@+id/activity_alarm_add_repeat_button"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_above="@id/activity_alarm_add_info_container"
+        android:src="@drawable/repeat"
+        android:tint="@color/colorHint"
+        android:layout_marginBottom="-53dp"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/background_circle"
+        android:backgroundTint="#EEE"
+        android:elevation="6dp"
+        android:onClick="onRepeatBtnClicked"
+        tools:targetApi="lollipop" />
+
+    <kasper_external_apps.android.alarmer.front.components.CustomTextView
+        android:id="@+id/activity_alarm_add_title_Text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="یادآور جدید"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_above="@id/activity_alarm_add_info_container"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/background_floating_text"
+        android:elevation="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+</RelativeLayout>

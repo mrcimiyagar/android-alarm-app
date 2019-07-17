@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kasper_external_apps.android.alarmer">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".back.core.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".front.activities.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".front.activities.IntroActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".front.activities.AlarmMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".front.activities.AlarmAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".front.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".front.activities.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog"/>
+        <activity
+            android:name=".front.activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".front.activities.SortSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".front.activities.AlarmGradeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".front.activities.AlarmRepeatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".front.activities.ComminSoonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".front.activities.AlarmCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".front.activities.YesNoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+
+        <service
+            android:name=".back.utils.AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".back.utils.AlarmReceiver" />
+
+        <receiver android:name=".front.widgets.AlarmWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="kasper_external_apps.android.alarmer.AlarmLeftBtnClick" />
+                <action android:name="kasper_external_apps.android.alarmer.AlarmRightBtnClick" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_alarm_info" />
+        </receiver>
+
+        <service
+            android:name=".back.utils.AlarmWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>

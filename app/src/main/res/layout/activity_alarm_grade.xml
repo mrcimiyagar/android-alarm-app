@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="kasper_external_apps.android.alarmer.front.activities.SortSetActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="انتخاب درجه ی اهمیت"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#DDD"/>
+
+    <RadioButton
+        android:id="@+id/adapter_sort_radio_button0"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:buttonTint="#000"
+        android:text="بالا"
+        android:textSize="18sp"/>
+
+    <RadioButton
+        android:id="@+id/adapter_sort_radio_button1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:buttonTint="#000"
+        android:text="متوسط"
+        android:textSize="18sp"/>
+
+    <RadioButton
+        android:id="@+id/adapter_sort_radio_button2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:buttonTint="#000"
+        android:text="پایین"
+        android:textSize="18sp"/>
+
+</LinearLayout>
